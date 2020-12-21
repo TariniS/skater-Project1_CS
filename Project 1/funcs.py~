@@ -1,0 +1,30 @@
+# Project 1
+# Name: Tarini Srikanth
+# Instructor: Turner
+# Section: CPE101-05
+import math
+def poundsToKG(pounds):
+    massSkater = pounds*0.453592
+    return massSkater
+def getMassObject(object):
+    if(object=='t'):
+        return 0.1
+    if(object=='p'):
+        return 1.0
+    if(object=='r'):
+        return 3.0
+    if(object=='g'):
+        return 5.3
+    if(object=='l'):
+        return 9.07
+    else:
+        return 0.0
+def getVelocityObject(distance):
+    insideValue =(9.8*distance)/2
+    velocityObject = math.sqrt(insideValue)
+    return velocityObject
+def getVelocitySkater(massSkater, massObject, velObject):
+    velocitySkater = (massObject*velObject)/massSkater
+    return velocitySkater
+
+
